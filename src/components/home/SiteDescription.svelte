@@ -1,7 +1,6 @@
-<h1>Welcome to Jordan's Workshop</h1>
-<h2>Jordan Côté's Web test environment, CI/CD guinea pig, blog & resume!</h2>
-
 <section>
+	<h1>Welcome to Jordan's Workshop</h1>
+	<h2>Jordan Côté's Web test environment, CI/CD guinea pig, blog & resume!</h2>
 	<h3>🚦This site will always be in construction 🚧</h3>
 
 	<p>Current stack:</p>

@@ -1,12 +1,11 @@
 <script>
+	import Footer from "../components/general/Footer.svelte";
+	import Header from "../components/general/Header.svelte";
 	import "../global.scss";
 </script>
 
-<header>
-	header
-	<nav>nav</nav>
-</header>
+<Header />
 
 <slot />
 
-<footer>footer</footer>
+<Footer />
