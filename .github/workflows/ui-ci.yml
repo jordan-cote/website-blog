@@ -1,0 +1,25 @@
+name: Svelte Front-end Continuous Integration
+
+on:
+  push:
+    branches:
+      - master
+    pull_request:
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Installing dependencies
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+        
+      - name: Installing Packages
+        run: npm ci
+
+      - name: Checking lint
+        run: npm run lint
