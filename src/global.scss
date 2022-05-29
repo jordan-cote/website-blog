@@ -1,7 +1,26 @@
+@import "./constants.scss";
+
 body {
 	margin: 0;
+	background-color: teal;
+
+	color: rgb(243, 250, 249);
+	overflow: hidden;
 }
 
-h1 {
-	color: teal;
+.content-fit {
+	margin: 0 auto;
+	max-width: 1176px; //TODO check for ultrawide
+	@include padding-x($spacer1);
+}
+
+//source: https://stackoverflow.com/a/4407335/11136560
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }

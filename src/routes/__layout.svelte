@@ -4,8 +4,21 @@
 	import "../global.scss";
 </script>
 
-<Header />
+<div style="overflow: hidden;">
+	<Header />
+	<div class="content-fit">
+		<div>
+			<slot />
+		</div>
+	</div>
+	<Footer />
+</div>
 
-<slot />
-
-<Footer />
+<style lang="scss">
+	.content-fit {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100vh;
+	}
+</style>

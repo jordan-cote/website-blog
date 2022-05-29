@@ -1,3 +1,5 @@
+$spacer1: 1rem;
+
 @mixin margin-x($spacing) {
 	margin-left: $spacing;
 	margin-right: $spacing;
