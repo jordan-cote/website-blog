@@ -31,8 +31,6 @@
 			.not-mobile {
 				display: none;
 			}
-
-			
 		}
 	}
 </style>
